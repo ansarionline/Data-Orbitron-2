@@ -1,0 +1,292 @@
+/* General Styles */
+body {
+    background-color: #f0faff; /* Bright light blue background */
+    color: #2c3e50; /* Dark blue-gray text for readability */
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+/* Buttons */
+button, .btn {
+    background: linear-gradient(to right, #00aaff, #0077cc); /* Vibrant blue gradient */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease;
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.inptext {
+    background-color: #00aaff; /* Blue background */
+    color: #ffffff; /* White text for contrast */
+    border: 1px solid #0077cc; /* Vibrant blue border */
+    font-size: 14px; /* Small font size */
+    padding: 5px 5px; /* Compact padding */
+}
+button:hover, .btn:hover {
+    background: linear-gradient(to right, #0077cc, #00aaff); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Input and Select Styling */
+input, select {
+    background-color: #ffffff; /* Light blue background */
+    color: #2c3e50; /* Dark blue-gray text */
+    border: 1px solid #0077cc; /* Vibrant blue border */
+    border-radius: 0px; /* Rounded corners */
+    font-size: 12px; /* Consistent font size */
+    padding: 0px 0px; /* Padding for better spacing */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+/* Input and Select Focus Effect */
+input:focus, select:focus:focus {
+    background-color: #ffffff; /* White background on focus */
+    border-color: #0077cc; /* Vibrant blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.7); /* Stronger blue glow effect */
+}
+/* Placeholder Text Styling */
+input::placeholder, select::placeholder {
+    color: #6c757d; /* Muted placeholder text */
+    font-style: italic; /* Italicized placeholder text */
+}
+
+/* Tooltip Styling */
+.tooltip-inner {
+    background-color: #0077cc; /* Vibrant blue background for tooltips */
+    color: #ffffff; /* White text for contrast */
+    font-size: 12px; /* Smaller font size for tooltips */
+    border-radius: 4px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for better spacing */
+}
+
+/* Responsive Design for Inputs and Selects */
+@media (max-width: 768px) {
+    input, select {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 6px 10px; /* Reduced padding for mobile */
+    }
+}
+/* Table Container */
+.dash-table-container {
+    background-color: #ffffff; /* White background for contrast */
+    color: #2c3e50; /* Dark blue-gray text */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+/* Table Header */
+.dash-table-container .dash-spreadsheet-header {
+    background: linear-gradient(to right, #00aaff, #0077cc); /* Vibrant blue gradient */
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* Table Cells */
+.dash-table-container .dash-spreadsheet-cell {
+    text-align: center;
+    background-color: #f0faff; /* Light blue for alternating rows */
+    color: #2c3e50;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Hover Effect */
+.dash-table-container .dash-spreadsheet-cell:hover {
+    background-color: #e6f7ff; /* Lighter blue hover effect */
+    color: #0077cc; /* Vibrant blue text */
+}
+
+/* Selected Cells */
+.dash-table-container .dash-spreadsheet-cell.selected {
+    background-color: #cceeff; /* Soft blue for selected cells */
+    color: #005fa3; /* Darker blue text */
+    border: 2px solid #0077cc; /* Blue border */
+}
+
+/* Accordion Styling */
+.dash-bootstrap .accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dash-bootstrap .accordion-header {
+    background: linear-gradient(to right, #00aaff, #0077cc); /* Vibrant blue gradient */
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dash-bootstrap .accordion-body {
+    background-color: #ffffff; /* White background for content */
+    color: #2c3e50;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    button, .btn {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .dash-table-container {
+        margin: 10px 0;
+    }
+
+    .dash-bootstrap .accordion-header {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .dash-bootstrap .accordion-body {
+        padding: 12px;
+    }
+}
+
+/* Thin Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+    height: 8px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0077cc; /* Vibrant blue color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00aaff; /* Lighter blue on hover */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0faff; /* Light blue background for the scrollbar track */
+}
+.title-button {
+    display: inline-block;
+    background-color: #2575fc;
+    color: rgb(255, 255, 255);
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 20px;
+    margin-right: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 20vw;
+    text-align: center;
+}
+button:hover, .btn:hover {
+    background-color: #1e5bb8;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+button:active, .btn:active {
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+}
+/* Responsive Design for Title Button */
+@media (max-width: 768px) {
+    .title-button {
+        width: 80vw; /* Full width on smaller screens */
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}
+/* Responsive Design for Table */
+@media (max-width: 768px) {
+    .dash-table-container {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0;
+    }
+    .dash-table-container .dash-spreadsheet-header,
+    .dash-table-container .dash-spreadsheet-cell {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 8px; /* Reduced padding for mobile */
+    }
+}
+/* Responsive Design for Accordion */
+@media (max-width: 768px) {
+    .dash-bootstrap .accordion-header {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 10px; /* Reduced padding for mobile */
+    }
+    .dash-bootstrap .accordion-body {
+        padding: 12px; /* Reduced padding for mobile */
+    }
+}
+/* Responsive Design for Buttons */
+@media (max-width: 768px) {
+    button, .btn {
+        max-width: 100%; /* Full width on smaller screens */
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px 12px; /* Reduced padding for mobile */
+    }
+}
+/* Responsive Design for Scrollbar */
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 6px; /* Thinner scrollbar on mobile */
+        height: 6px; /* Thinner horizontal scrollbar on mobile */
+    }
+}
+/* Responsive Button Styling */
+.responsive-button {
+    font-size: 16px; /* Default font size */
+    padding: 10px 20px; /* Default padding */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+/* Adjust button size for smaller screens */
+@media (max-width: 768px) {
+    .responsive-button {
+        font-size: 14px; /* Smaller font size */
+        padding: 8px 16px; /* Reduced padding */
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Adjust button size for extra small screens */
+@media (max-width: 576px) {
+    .responsive-button {
+        font-size: 12px; /* Even smaller font size */
+        padding: 6px 12px; /* Further reduced padding */
+    }
+}
+/* Offcanvas Styling */
+#left-offcanvas {
+    width: 25vw; /* Default width for larger screens */
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Prevent scrolling for the entire Offcanvas */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Smooth resizing transition */
+}
+
+/* Responsive Design for Offcanvas */
+@media (max-width: 768px) {
+    #left-offcanvas {
+        width: 100vw; /* Full width on smaller screens */
+        height: 50vh; /* Half height for mobile */
+        bottom: 0; /* Position at the bottom */
+        left: 0; /* Full width from the left */
+        position: fixed; /* Fix the position */
+    }
+}
